@@ -16,7 +16,7 @@ class FileManipulatorTest : public ::testing::Test
 
 TEST_F(FileManipulatorTest, change_this_name)
 {
-
+    
 }
 
 TEST_F(FileManipulatorTest, change_this_name2)

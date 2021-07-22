@@ -13,14 +13,23 @@ class QuadraticEquationTest : public ::testing::Test
     void TearDown() override {};
 };
 
-TEST_F(QuadraticEquationTest, change_this_name)
+// (x-3)(x+3)
+TEST_F(QuadraticEquationTest, GivenEquationWithTwoQuadraticRoots)
 {
-
+    std::pair<unsigned, std::pair<float, float>> expectetResult {2, {-3,3}};
+    EXPECT_EQ(expectetResult, utils::quadraticEquation(1,0,-9));
+    
 }
 
-TEST_F(QuadraticEquationTest, change_this_name2)
+// (x+3)^2
+TEST_F(QuadraticEquationTest, lalala)
 {
+    float expectedNumberOfRoots {1};
+    float expectedRoot {3};
+    auto result = utils::quadraticEquation(1,-6,9);
 
+    EXPECT_EQ(expectedNumberOfRoots, result.first);
+    EXPECT_EQ(expectedRoot, result.second.first);
 }
 
 TEST_F(QuadraticEquationTest, change_this_name3)

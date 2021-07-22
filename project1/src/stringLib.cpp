@@ -43,4 +43,3 @@ bool StringLib::sameStrings(std::string str1, std::string str2)
 }
     
 } // namespace utils
-
